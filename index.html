@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="modal">
+        <div class="input-group">
+            <input type="text" class="form-control"  id="modalInput">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-outline-warning" onclick="updateTask()">Update</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="input-group py-5">
+            <input type="text" class="form-control" id="taskValue" placeholder="Enter Task!!!!!!!!">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-outline-primary" onclick="add()">ADD TASK</button>
+            </div>
+        </div>
+        <h4>Task List</h4>
+        <p id="result"></p>
+        <hr>
+        <h4>Finished Task List</h4>
+        <button type="button" class="btn btn-sm btn-info my-3" onclick="show()">SHow</button>
+        <p id="finishTasks"></p>
+    </div>
+    
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
